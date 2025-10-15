@@ -58,7 +58,7 @@ This is the list of tracks and their Track Chairs:
 + Security Usability and Measurement ✉ccs26-usablesec-track@acm.org
   - Mainack Mondal (IIT Kharagpur, India)
   - Michelle Mazurek (University of Maryland, USA)
-  - Machine Learning and Security ✉ccs26-mlsec-track@acm.org
++ Machine Learning and Security ✉ccs26-mlsec-track@acm.org
   - Shiqing Ma (UMass Amherst)
   - Lea Schönherr (CISPA, Germany)
   - Fabio Pierazzi (University College London, UK)
@@ -82,6 +82,7 @@ Each submission must include a brief statement (e.g., 200 words) in the appropri
 
 + __Track selection justification:__ Why is your selected track the best match for your work?
 + __Practical security relevance:__ What real-world systems, threat models, and actionable insights does your work address?
+  
 With this measure, we want to ensure that submissions are clearly aligned with the intended CCS track and demonstrate concrete security relevance. For work spanning multiple tracks, simply choose the best fit and briefly explain your reasoning, and mention any fitting alternative tracks in your statement.
 
 CCS distinguishes itself as a venue focused on __practical security impact for real systems__. Papers without a clear justification may be desk-rejected or reassigned to a more suitable track.
@@ -109,7 +110,7 @@ __Security/Privacy of Machine Learning:__ If your work directly addresses the se
 Relevant work investigates novel attacks (e.g., data poisoning, backdoors, adversarial examples, prompt injection, model inversion, membership inference) or defenses (e.g., attack detection, secure training methods, post-attack forensics) throughout the ML lifecycle under plausible threat models that could occur in practice, not based on unrealistic assumptions or unlikely scenarios.
 
 
-All papers submitted to this track must provide a threat model that clearly articulates the (i) envisioned attacker(s), (ii) threat surfaces (e.g., system components including but not limited to the underlying machine learning algorithm), (iii) generality (e.g., demonstrating that the attack is not limited to a specific model but generalizes across model architectures or families.), and (iv) practicality of the attack. If the authors believe they still fit the "Machine Learning and Security" track without the need for a threat model, they need to explicitly justify this in the Track Justification Statement.
+All papers submitted to this track must provide a threat model that clearly articulates the (i) envisioned attacker(s), (ii) threat surfaces (e.g., system components including but not limited to the underlying machine learning algorithm), (iii) generality (e.g., demonstrating that the attack is not limited to a specific model but generalizes across model architectures or families.), and (iv) practicality of the attack. __If the authors believe they still fit the "Machine Learning and Security" track without the need for a threat model, they need to explicitly justify this in the Track Justification Statement.__
 
 The paper evaluation needs to be linked to the threat model and scenario motivating the paper. Strong submissions produce generalizable contributions such as frameworks for risk assessment, attack patterns that generalize across models, systematic problem characterizations, or principled defenses with clear justification. Papers that present collections of examples or trial-and-error probes, or approaches lacking methodical rigor, will be considered out of scope.
 
