@@ -72,7 +72,7 @@ This is the list of tracks and their Track Chairs:
   - Foteini Baldimtsi (George Mason University, USA)
 + Blockchain and Distributed Systems ✉ccs26-distributed-track@acm.org
   - Kartik Nayak (Duke University, USA)
-  - Privacy and Anonymity ✉ccs26-privacy-track@acm.org
++ Privacy and Anonymity ✉ccs26-privacy-track@acm.org
   - Thorsten Strufe (Karlsruhe Institute of Technology, Germany)
 
 
