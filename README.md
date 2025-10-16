@@ -59,7 +59,7 @@ This is the list of tracks and their Track Chairs:
   - Mainack Mondal (IIT Kharagpur, India)
   - Michelle Mazurek (University of Maryland, USA)
 + Machine Learning and Security ✉ccs26-mlsec-track@acm.org
-  - Shiqing Ma (UMass Amherst)
+  - Shiqing Ma (UMass Amherst, USA)
   - Lea Schönherr (CISPA, Germany)
   - Fabio Pierazzi (University College London, UK)
 + Formal Methods and Programming Languages ✉ccs26-formal-track@acm.org
