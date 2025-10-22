@@ -1,6 +1,6 @@
 # Call for Papers
 
-(Please help [nominate PC members](https://docs.google.com/forms/d/e/1FAIpQLScjL_3dfCtX8-z7mm4cj4zDBGtPafBNDWNWeJkxq16BjyaGNA/viewform))
+(Please help [nominate PC members](https://docs.google.com/forms/d/e/1FAIpQLSdTkui8saQtaGxym6h5KlJRi9XVVbjlVgyD5BPsx2LPcKScIA/viewform))
 
 The 33rd ACM Conference on Computer and Communications Security (CCS) seeks submissions presenting novel contributions related to all real-world aspects of computer security and privacy. Theoretical papers must make a convincing case for the relevance of their results to practice. Authors are encouraged to write the abstract and introduction of their paper in a way that makes the results accessible and compelling to a general computer-security researcher. In particular, authors should bear in mind that anyone on the program committee may be asked to review any paper.
 
