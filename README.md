@@ -12,7 +12,7 @@ Feedback that is especially helpful:
 - [ml-guidance] Is the ML placement guidance and threat-model requirement calibrated appropriately?
 - [artifacts] Are artifact expectations and the optional AE setup appropriate for our community?
 
-If possible, please comment within the next two weeks (by November 11, 2025) so we can incorporate changes and publish the final CfP promptly.
+If possible, please comment within the next two weeks (by November 12, 2025) so we can incorporate changes and publish the final CfP promptly.
 
 If GitHub is not convenient, you may email the Program Co-Chairs at ccs26-pc-chairs@acm.org
 (GitHub is preferred so discussions are transparent to all).
