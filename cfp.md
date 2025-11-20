@@ -13,7 +13,7 @@ Authors of each accepted paper must ensure that at least one author registers fo
 
 ## Paper Submission Information
 
-All submissions must be received by 11:59 PM AoE (UTC-12) on the day of the corresponding deadline. Submitted papers must not substantially overlap with papers that have been published or accepted for publication, or that are simultaneously in submission to a journal, conference, or workshop with published proceedings. All submissions should be properly anonymized. Papers should avoid revealing authors' identity in the text. When referring to their previous work, authors are required to cite their papers in the third person, without identifying themselves. In the unusual case in which a third-person reference is infeasible, authors can blind the reference itself. Papers not properly anonymized may be rejected without review. __Authors may submit up to a maximum of 5 papers at each cycle.__
+All submissions must be received by 11:59 PM AoE (UTC-12) on the day of the corresponding deadline. Submitted papers must not substantially overlap with papers that have been published or accepted for publication, or that are simultaneously in submission to a journal, conference, or workshop with published proceedings. All submissions should be properly anonymized. Papers should avoid revealing authors' identity in the text. When referring to their previous work, authors are required to cite their papers in the third person, without identifying themselves. In the unusual case in which a third-person reference is infeasible, authors can blind the reference itself. Papers not properly anonymized may be rejected without review. __Authors may submit up to a maximum of 7 papers at each cycle.__
 
 All submitted papers will be evaluated based on their merits, particularly their importance to practical aspects of computer and communications security and privacy, novelty, quality of execution, and presentation. Note that CCS does not accept SoK or survey papers. For papers that might raise ethical concerns, authors are expected to convince reviewers that proper procedures (such as IRB approval or responsible disclosure) have been followed, and due diligence has been made to minimize potential harm.
 
@@ -21,7 +21,7 @@ Submitted papers may be rejected for being out of scope, at the discretion of th
 
 ## Withdrawing Policy
 
-A paper can be withdrawn at any point before the reviews have been sent to the authors. Once the reviews have been sent to the authors the paper cannot be withdrawn.
+Withdrawal of a paper is prohibited at any point prior to the official notification of the final decision (acceptance or rejection) being sent to the authors. By submitting a paper, authors commit to seeing the submission through the full review process. 
 
 ## Paper Format
 
@@ -29,7 +29,13 @@ Submissions must be a PDF file in double-column [ACM format](https://www.acm.org
 
 ## Providing Artifacts at Submission Time
 
-Submissions whose claimed contributions rely on artifacts (e.g., code, models, data sets) are expected to make these accessible to the reviewers, e.g., through a link to an anonymous resource, unless there are good reasons not to, in which case these reasons must be mentioned in the submission. Submissions whose claimed contributions do not rely on artifacts do not need to submit artifacts. An anonymous link to a resource on the web is acceptable, provided the contents in the resource are also anonymized.
+Artifacts (including code, datasets, scripts, or tools) are required for submissions where one or more claimed contributions are fundamentally based on an implementation, experimental evaluation, system, tool, or dataset. This includes, but is not limited to, papers that introduce: (1) A new system, library, or tool. (2) Experimental results derived from an implementation. (3) A new benchmark, dataset, or data collection methodology.
+
+Failure to provide the necessary artifacts for evaluation without justification can lead to rejection. In particular, if a reviewer determines that a claimed contribution cannot be properly evaluated without accessing the required artifacts, the paper will be rejected. If artifacts cannot be made available (e.g., due to legal, licensing, proprietary, or serious ethical/privacy concerns), a detailed, explicit justification must be included in the submission for the reviewers to assess and approve.
+
+All submitted artifacts (code, data, and documentation) will be treated with the same strict confidentiality as the submitted manuscript. Access is limited solely to members of the PC assigned to review the paper. Reviewers are explicitly restricted to using the artifacts only for the purpose of evaluating the paper's claims. Any unauthorized use, sharing, or downloading for personal or professional purposes is an immediate ethical violation and will result in removal from the PC and barring from future service.
+
+To preserve reviewer anonymity in a double-blind process, authors hosting code, data, or other artifacts must use dedicated anonymous hosting services (e.g., https://anonymous.4open.science or Open Science Framework anonymous view-only links). These services ensure that access logs do not record reviewer IP addresses or any other identifying information. General-purpose platforms such as Zenodo, Figshare, or standard public GitHub repositories do not provide sufficient anonymization for double-blind review and must not be used for this purpose. Authors should include the anonymous URL(s) directly in the submitted paper (not in the conference submission system HotCRP). Access will be restricted to assigned reviewers only. After acceptance, authors are encouraged to de-anonymize or replace the link with a permanent, non-anonymous version, and participate the Optional Artifact Evaluation.
 
 ## Optional Artifact Evaluation
 
@@ -58,7 +64,7 @@ This is the list of tracks and their Track Chairs:
 + Security Usability and Measurement ✉ccs26-usablesec-track@acm.org
   - Mainack Mondal (IIT Kharagpur, India)
   - Michelle Mazurek (University of Maryland, USA)
-+ Machine Learning and Security ✉ccs26-mlsec-track@acm.org
++ Security and Privacy of Machine Learning ✉ccs26-mlsec-track@acm.org
   - Shiqing Ma (UMass Amherst, USA)
   - Lea Schönherr (CISPA, Germany)
   - Fabio Pierazzi (University College London, UK)
@@ -81,11 +87,8 @@ This is the list of tracks and their Track Chairs:
 Each submission must include a brief statement (e.g., 200 words) in the appropriate section of HotCRP addressing:
 
 + __Track selection justification:__ Why is your selected track the best match for your work?
-+ __Practical security relevance:__ What real-world systems, threat models, and actionable insights does your work address?
   
-With this measure, we want to ensure that submissions are clearly aligned with the intended CCS track and demonstrate concrete security relevance. For work spanning multiple tracks, simply choose the best fit and briefly explain your reasoning, and mention any fitting alternative tracks in your statement.
-
-CCS distinguishes itself as a venue focused on __practical security impact for real systems__. Papers without a clear justification may be desk-rejected or reassigned to a more suitable track.
+With this measure, we want to ensure that submissions are clearly aligned with the intended CCS track. For work spanning multiple tracks, simply choose the best fit and briefly explain your reasoning, and mention any fitting alternative tracks in your statement.
 
 ## Special note for Machine Learning papers submitting to CCS
 
@@ -93,7 +96,7 @@ Machine learning has become pervasive across security and privacy research. To e
 
 ### Categorization of ML-Related Papers
 
-__ML for Security/Privacy Problems:__ If ML is used to solve a security or privacy issue, submit  the paper in the track that better aligns with the __primary field of the problem being addressed__, _not_ "Machine Learning and Security."
+__ML for Security and Privacy Problems:__ If ML is used to solve a security or privacy issue, submit the paper in the track that better aligns with the __primary field of the problem being addressed__, _not_ "Machine Learning and Security."
 
 _Examples:_
 
@@ -103,14 +106,11 @@ _Examples:_
 + [Analyzing PDFs like Binaries: Adversarially Robust PDF Malware Analysis via Intermediate Representation and Language Model](https://arxiv.org/pdf/2506.17162) is primarily focused on the definition of a more robust malware detection system (Software Security Track)
 + [Securely Training Decision Trees Efficiently](https://dl.acm.org/doi/pdf/10.1145/3658644.3670268), which is primarily focused on privacy-preserving ML with a heavy cryptographic component (Applied Cryptography)
 
-
-__Security/Privacy of Machine Learning:__ If your work directly addresses the security or privacy of ML itself, the Machine Learning and Security track may be appropriate, provided the contribution has practical relevance to realistic ML systems. This must also be stated in the Track Justification Statement, clarifying the authors' decision not to submit to a domain-specific track (e.g., Web Security, Software Security).
-
+__Security and Privacy of Machine Learning:__ If your work directly addresses the security or privacy of ML itself, the Machine Learning and Security track may be appropriate, provided the contribution has practical relevance to realistic ML systems. This must also be stated in the Track Justification Statement, clarifying the authors' decision not to submit to a domain-specific track (e.g., Web Security, Software Security).
 
 Relevant work investigates novel attacks (e.g., data poisoning, backdoors, adversarial examples, prompt injection, model inversion, membership inference) or defenses (e.g., attack detection, secure training methods, post-attack forensics) throughout the ML lifecycle under plausible threat models that could occur in practice, not based on unrealistic assumptions or unlikely scenarios.
 
-
-All papers submitted to this track must provide a threat model that clearly articulates the (i) envisioned attacker(s), (ii) threat surfaces (e.g., system components including but not limited to the underlying machine learning algorithm), (iii) generality (e.g., demonstrating that the attack is not limited to a specific model but generalizes across model architectures or families.), and (iv) practicality of the attack. __If the authors believe they still fit the "Machine Learning and Security" track without the need for a threat model, they need to explicitly justify this in the Track Justification Statement.__
+All papers submitted to this track must provide a threat model that clearly articulates the (i) envisioned attacker(s), (ii) threat surfaces (e.g., system components including but not limited to the underlying machine learning algorithm), (iii) generality (e.g., demonstrating that the attack is not limited to a specific model but generalizes across model architectures or families.), and (iv) practicality of the attack. __If the authors believe they still fit the "Security and Privacy of Machine Learning" track without the need for a threat model, they need to explicitly justify this in the Track Justification Statement.__
 
 The paper evaluation needs to be linked to the threat model and scenario motivating the paper. Strong submissions produce generalizable contributions such as frameworks for risk assessment, attack patterns that generalize across models, systematic problem characterizations, or principled defenses with clear justification. Papers that present collections of examples or trial-and-error probes, or approaches lacking methodical rigor, will be considered out of scope.
 
@@ -191,7 +191,7 @@ July 17, 2026
 
 ## Submission Site
 
-__TBD__
+https://ccs2026a.hotcrp.com/ (for the first cycle), and https://ccs2026b.hotcrp.com/ (for the second cycle).
 
 Please Note: The official publication date is the first day of the conference. The official publication date affects the deadline for any patent filings related to published work.
 
