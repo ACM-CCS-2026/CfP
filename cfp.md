@@ -1,7 +1,5 @@
 # Call for Papers
 
-(Please help [nominate PC members](https://docs.google.com/forms/d/e/1FAIpQLSdTkui8saQtaGxym6h5KlJRi9XVVbjlVgyD5BPsx2LPcKScIA/viewform))
-
 The 33rd ACM Conference on Computer and Communications Security (CCS) seeks submissions presenting novel contributions related to all real-world aspects of computer security and privacy. Theoretical papers must make a convincing case for the relevance of their results to practice. Authors are encouraged to write the abstract and introduction of their paper in a way that makes the results accessible and compelling to a general computer-security researcher. In particular, authors should bear in mind that anyone on the program committee may be asked to review any paper.
 
 CCS has two review cycles in 2026. For each submission, one of the following decisions will be made:
@@ -17,17 +15,17 @@ All submissions must be received by 11:59 PM AoE (UTC-12) on the day of the corr
 
 All submitted papers will be evaluated based on their merits, particularly their importance to practical aspects of computer and communications security and privacy, novelty, quality of execution, and presentation. Note that CCS does not accept SoK or survey papers.
 
-Ethical Considerations: Authors are expected to consider the ethical implications and potential societal impact of their work. Papers that raise ethical concerns, such as those involving human subjects, user data, or real-world vulnerability analysis, must include a dedicated "Ethical Considerations" section. This section should discuss the balance of risks vs. benefits and the steps taken to minimize potential harm (e.g., responsible disclosure, data anonymization). Note that institutional (IRB/ERB) approval is neither strictly necessary nor always sufficient to demonstrate ethical conduct; we expect authors to reason about the ethics of their work beyond ensuring institutional compliance. For detailed guidance on community standards, we follow the [USENIX Security'26 Ethics Policy](https://www.usenix.org/conference/usenixsecurity26/call-for-papers#ethics). This discussion section will not count toward the page limit.
+Submissions must be a PDF file in double-column [ACM format](https://www.acm.org/publications/proceedings-template) using "sigconf" 2-column format, no more than 12 pages long, excluding the bibliography, well-marked appendices, and supplementary material. Note that reviewers are not required to read the appendices or any supplementary material. Authors should not change the font or the margins of the ACM format. The CCS information, such as concepts, keywords, or rights management information (e.g., DOI and ISBN), must be retained. The teaser figure is optional. Please refer to the sample-sigconf.tex and sample-sigconf.pdf in the ACM package (also mirrored [here](https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty)) as an example. Submissions not following the required format may be rejected without review.
 
 Submitted papers may be rejected for being out of scope, at the discretion of the PC chairs. Authors who have questions about whether their paper is in scope are encouraged to ask the PC chairs in advance. No modifications to the author list on a paper may be made after submission.
+
+## Ethical Considerations
+
+Authors are expected to consider the ethical implications and potential societal impact of their work. Papers that raise ethical concerns, such as those involving human subjects, user data, or real-world vulnerability analysis, must include a dedicated "__Ethical Considerations__" section. This section should discuss the balance of risks vs. benefits and the steps taken to minimize potential harm (e.g., responsible disclosure, data anonymization). Note that institutional (IRB/ERB) approval is neither strictly necessary nor always sufficient to demonstrate ethical conduct; we expect authors to reason about the ethics of their work beyond ensuring institutional compliance. For detailed guidance on community standards, we follow the [USENIX Security'26 Ethics Policy](https://www.usenix.org/conference/usenixsecurity26/call-for-papers#ethics). This discussion section will not count toward the page limit.
 
 ## Withdrawing Policy
 
 Withdrawal of a paper is prohibited at any point prior to the official notification of the final decision (acceptance or rejection) being sent to the authors. By submitting a paper, authors commit to seeing the submission through the full review process. 
-
-## Paper Format
-
-Submissions must be a PDF file in double-column [ACM format](https://www.acm.org/publications/proceedings-template) using "sigconf" 2-column format, no more than 12 pages long, excluding the bibliography, well-marked appendices, and supplementary material. Note that reviewers are not required to read the appendices or any supplementary material. Authors should not change the font or the margins of the ACM format. The CCS information, such as concepts, keywords, or rights management information (e.g., DOI and ISBN), must be retained. The teaser figure is optional. Please refer to the sample-sigconf.tex and sample-sigconf.pdf in the ACM package (also mirrored [here](https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty)) as an example. Submissions not following the required format may be rejected without review.
 
 ## Providing Artifacts at Submission Time
 
@@ -35,9 +33,9 @@ Artifacts (including code, datasets, scripts, or tools) are required for submiss
 
 Failure to provide the necessary artifacts for evaluation without justification can lead to rejection. In particular, if a reviewer determines that a claimed contribution cannot be properly evaluated without accessing the required artifacts, the paper will be rejected. If artifacts cannot be made available (e.g., due to legal, licensing, proprietary, or serious ethical/privacy concerns), a detailed, explicit justification must be included in the submission for the reviewers to assess and approve.
 
-All submitted artifacts (code, data, and documentation) will be treated with the same strict confidentiality as the submitted manuscript. Access is limited solely to members of the PC assigned to review the paper. Reviewers are explicitly restricted to using the artifacts only for the purpose of evaluating the paper's claims. Any unauthorized use, sharing, or downloading for personal or professional purposes is an immediate ethical violation and will result in removal from the PC and barring from future service.
+All submitted artifacts (code, data, and documentation) will be treated with the same strict confidentiality as the submitted manuscript. Access is limited solely to members of the PC assigned to review the paper. Reviewers are explicitly restricted to using the artifacts only for the purpose of evaluating the paper's claims. Any unauthorized use, sharing, or downloading for personal or professional purposes is an immediate ethical violation, and will result in removal from the PC and further sanctions such as bans on future service or submissions
 
-To preserve reviewer anonymity in a double-blind process, authors hosting code, data, or other artifacts must use dedicated anonymous hosting services (e.g., https://anonymous.4open.science). These services ensure that access logs do not record reviewer IP addresses or any other identifying information. General-purpose platforms such as Zenodo, Figshare, or standard public GitHub repositories do not provide sufficient anonymization for double-blind review and must not be used for this purpose. Authors should include the anonymous URL(s) directly in the submitted paper (not in the conference submission system HotCRP).   After acceptance, authors are encouraged to de-anonymize or replace the link with a permanent, non-anonymous version, and participate the Optional Artifact Evaluation. For datasets or artifacts that exceed the storage limits of anonymous hosting services (e.g., >1GB), authors are permitted to provide a representative subset (e.g., a "toy" dataset or validation set) sufficient for reviewers to verify the code and methodology. Authors must include a justification explaining why the full dataset could not be provided anonymously and describe the integrity of the subset provided.
+To preserve reviewer anonymity in a double-blind process, authors hosting code, data, or other artifacts must use dedicated anonymous hosting services (e.g., https://anonymous.4open.science). These services ensure that access logs do not record reviewer IP addresses or any other identifying information. General-purpose platforms such as Zenodo, Figshare, or standard public GitHub repositories do not provide sufficient anonymization for double-blind review and must not be used for this purpose. Authors should include the anonymous URL(s) directly in the submitted paper (not in the conference submission system HotCRP). After acceptance, authors are encouraged to de-anonymize or replace the link with a permanent, non-anonymous version, and participate the Optional Artifact Evaluation. For datasets or artifacts that exceed the storage limits of anonymous hosting services (e.g., >1GB), authors are permitted to provide a representative subset (e.g., a "toy" dataset or validation set) sufficient for reviewers to verify the code and methodology. Authors must include a justification explaining why the full dataset could not be provided anonymously and describe the integrity of the subset provided.
 
 ## Optional Artifact Evaluation
 
@@ -98,7 +96,7 @@ Machine learning has become pervasive across security and privacy research. To e
 
 ### Categorization of ML-Related Papers
 
-__ML for Security and Privacy Problems:__ If ML is used to solve a security or privacy issue, submit the paper in the track that better aligns with the __primary field of the problem being addressed__, _not_ "Machine Learning and Security."
+__ML for Security and Privacy Problems:__ If ML is used to solve a security or privacy issue, submit the paper in the track that better aligns with the __primary field of the problem being addressed__, _not_ "Security and Privacy of Machine Learning".
 
 _Examples:_
 
@@ -108,7 +106,7 @@ _Examples:_
 + [Analyzing PDFs like Binaries: Adversarially Robust PDF Malware Analysis via Intermediate Representation and Language Model](https://arxiv.org/pdf/2506.17162) is primarily focused on the definition of a more robust malware detection system (Software Security Track)
 + [Securely Training Decision Trees Efficiently](https://dl.acm.org/doi/pdf/10.1145/3658644.3670268), which is primarily focused on privacy-preserving ML with a heavy cryptographic component (Applied Cryptography)
 
-__Security and Privacy of Machine Learning:__ If your work directly addresses the security or privacy of ML itself, the Machine Learning and Security track may be appropriate, provided the contribution has practical relevance to realistic ML systems. This must also be stated in the Track Justification Statement, clarifying the authors' decision not to submit to a domain-specific track (e.g., Web Security, Software Security).
+__Security and Privacy of Machine Learning:__ If your work directly addresses the security or privacy of ML itself, then the Security and Privacy of Machine Learning is the right track for you. This must also be stated in the Track Justification Statement, clarifying the authors' decision not to submit to a domain-specific track (e.g., Web Security, Software Security).
 
 Relevant work investigates novel attacks (e.g., data poisoning, backdoors, adversarial examples, prompt injection, model inversion, membership inference) or defenses (e.g., attack detection, secure training methods, post-attack forensics) throughout the ML lifecycle under plausible threat models that could occur in practice, not based on unrealistic assumptions or unlikely scenarios.
 
@@ -129,7 +127,7 @@ _Examples of suitable papers:_
 
 The conference requires cooperation from both authors and program committee members to ensure a fair review process. For this purpose, authors must report all program-committee members who, in their opinion, have a conflict of interest and therefore may not be able to provide an unbiased review. Mandatory declared conflicts of interest include current or former doctoral advisor/advisee, members of the same institution, close family members, and recent co-authors (within the past 2 years). For any other declared conflict, authors are required to explain the nature of the conflict Program Chairs and the Track Chairs. The chairs reserve the right to request further explanation and can remove non-mandatory conflicts at their discretion.
 
-Track Chairs are not allowed to submit papers in their own track but they may submit any number of papers in other tracks, subject to a maximum of 5 papers per cycle.
+Track Chairs are not allowed to submit papers in their own track but they may submit any number of papers in other tracks, subject to a maximum of 7 papers per cycle.
 
 Program-committee members who have a genuine conflict of interest with a paper, including the Program Chairs and the Track Chairs, will be excluded from evaluation and discussion of that paper. When a Track Program Chair has a conflict, the paper will be handled by the Program Chairs. When a Program Chair is conflicted, the other Co-Chair will be responsible for managing that paper. When both Program Chairs are in conflict, a committee member will be appointed to handle the paper. Program Chairs are not allowed to be authors or co-authors of any submissions.
 
