@@ -4,9 +4,9 @@ The 33rd ACM Conference on Computer and Communications Security (CCS) seeks subm
 
 CCS has two review cycles in 2026. For each submission, one of the following decisions will be made:
 
-+ Accept: Papers in this category will be accepted for publication in the proceedings and presentation at the conference, possibly after making minor changes with the oversight of a shepherd.
-+ Minor revision: Papers in this category are considered to be promising but need some minor additional work (e.g., minor experiments, proofs to minor lemmas). Authors will be given the opportunity to resubmit such papers, with appropriate revisions, in which case they should clearly explain in a separate note how the revisions address the comments of the reviewers. The revised paper will then be re-evaluated, and either accepted or rejected.
-+ Reject: Papers in this category are declined for inclusion in the conference. Papers rejected from the first review cycle may not be submitted again (even in revised form) to the second review cycle.
++ __Accept__: Papers in this category will be accepted for publication in the proceedings and presentation at the conference, possibly after making minor changes with the oversight of a shepherd.
++ __Minor revision__: Papers in this category are considered to be promising but need some minor additional work (e.g., minor experiments, proofs to minor lemmas). Authors will be given the opportunity to resubmit such papers, with appropriate revisions, in which case they should clearly explain in a separate note how the revisions address the comments of the reviewers. The revised paper will then be re-evaluated, and either accepted or rejected.
++ __Reject__: Papers in this category are declined for inclusion in the conference. Papers rejected from the first review cycle may not be submitted again (even in revised form) to the second review cycle.
 Authors of each accepted paper must ensure that at least one author registers for the conference, and that their paper is presented in-person at the conference if at all possible.
 
 ## Paper Submission Information
@@ -23,29 +23,89 @@ Submitted papers may be rejected for being out of scope, at the discretion of th
 
 Authors are expected to consider the ethical implications and potential societal impact of their work. Papers that raise ethical concerns, such as those involving human subjects, user data, or real-world vulnerability analysis, must include a dedicated "__Ethical Considerations__" section. This section should discuss the balance of risks vs. benefits and the steps taken to minimize potential harm (e.g., responsible disclosure, data anonymization). Note that institutional (IRB/ERB) approval is neither strictly necessary nor always sufficient to demonstrate ethical conduct; we expect authors to reason about the ethics of their work beyond ensuring institutional compliance. For detailed guidance on community standards, we follow the [USENIX Security'26 Ethics Policy](https://www.usenix.org/conference/usenixsecurity26/call-for-papers#ethics). This discussion section will not count toward the page limit.
 
-## Withdrawing Policy
+## Open Science Policy
 
-Withdrawal of a paper is prohibited at any point prior to the official notification of the final decision (acceptance or rejection) being sent to the authors. By submitting a paper, authors commit to seeing the submission through the full review process. 
+This edition of ACM CCS adopts an Open Science policy to strengthen the transparency, reproducibility, and long-term impact of published research. Authors are expected to share the artifacts underlying their results (such as code, datasets, models, scripts, and documentation) whenever legally, ethically, and practically possible.
+
+Each submitted paper **must include an “Open Science” appendix** that:
+- Enumerates all artifacts needed to evaluate the paper’s core contributions (e.g., code, datasets, models, configuration files, scripts, documentation, benchmarks).  
+- Clearly describes how the program committee can access each artifact during double-blind review (including anonymous URLs or credentials, where applicable). 
+- Explicitly justifies any artifact that **cannot** be shared (e.g., due to licensing restrictions, responsible disclosure concerns, safety or privacy of study subjects, or deployment risks if adversarial methods are released prematurely). When full sharing is not possible, authors are encouraged to provide partial, synthetic, or redacted artifacts that still allow reviewers to assess the methodology.
+
+Artifacts listed in the Open Science appendix are considered part of the submission and will be used in the review process. If a claimed contribution depends on an artifact that is not available and not convincingly justified, reviewers may judge that the contribution cannot be adequately evaluated, which can negatively affect the final decision.
 
 ## Providing Artifacts at Submission Time
 
-Artifacts (including code, datasets, scripts, or tools) are required for submissions where one or more claimed contributions are fundamentally based on an implementation, experimental evaluation, system, tool, or dataset. This includes, but is not limited to, papers that introduce: (1) A new system, library, or tool. (2) Experimental results derived from an implementation. (3) A new benchmark, dataset, or data collection methodology.
+Artifacts are **required** for submissions whose contributions fundamentally rely on an implementation, experimental evaluation, system, tool, or dataset. This includes, but is not limited to, papers that:
 
-Failure to provide the necessary artifacts for evaluation without justification can lead to rejection. In particular, if a reviewer determines that a claimed contribution cannot be properly evaluated without accessing the required artifacts, the paper will be rejected. If artifacts cannot be made available (e.g., due to legal, licensing, proprietary, or serious ethical/privacy concerns), a detailed, explicit justification must be included in the submission for the reviewers to assess and approve.
+1. Introduce a new system, library, or tool.  
+2. Present experimental results derived from an implementation.  
+3. Propose a new benchmark, dataset, or data collection methodology.
 
-All submitted artifacts (code, data, and documentation) will be treated with the same strict confidentiality as the submitted manuscript. Access is limited solely to members of the PC assigned to review the paper. Reviewers are explicitly restricted to using the artifacts only for the purpose of evaluating the paper's claims. Any unauthorized use, sharing, or downloading for personal or professional purposes is an immediate ethical violation, and will result in removal from the PC and further sanctions such as bans on future service or submissions
+If reviewers determine that a central contribution cannot be properly evaluated without accessing artifacts that are neither provided nor convincingly justified in the Open Science appendix, the paper may be rejected.
 
-To preserve reviewer anonymity in a double-blind process, authors hosting code, data, or other artifacts must use dedicated anonymous hosting services (e.g., https://anonymous.4open.science). These services ensure that access logs do not record reviewer IP addresses or any other identifying information. General-purpose platforms such as Zenodo, Figshare, or standard public GitHub repositories do not provide sufficient anonymization for double-blind review and must not be used for this purpose. Authors should include the anonymous URL(s) directly in the submitted paper (not in the conference submission system HotCRP). After acceptance, authors are encouraged to de-anonymize or replace the link with a permanent, non-anonymous version, and participate the Optional Artifact Evaluation. For datasets or artifacts that exceed the storage limits of anonymous hosting services (e.g., >1GB), authors are permitted to provide a representative subset (e.g., a "toy" dataset or validation set) sufficient for reviewers to verify the code and methodology. Authors must include a justification explaining why the full dataset could not be provided anonymously and describe the integrity of the subset provided.
+All artifacts will be treated with the same strict confidentiality as the manuscript. Access is restricted to the assigned PC members, who may use artifacts **only** for the purpose of evaluating the paper. Any unauthorized use, sharing, or downloading for personal or professional purposes constitutes a serious ethical violation and may result in removal from the PC and additional sanctions (such as bans on future service or submissions).
+
+To preserve anonymity in the double-blind review process:
+
+- Authors **must** host artifacts on anonymous hosting services (e.g., <https://anonymous.4open.science>) that do not record identifying access logs (such as reviewer IP addresses).  
+- General-purpose platforms like Zenodo, Figshare, or non-anonymized GitHub repositories do **not** provide sufficient anonymization and must not be used for submission-time hosting.  
+- Anonymous URLs should be included directly in the submitted paper (e.g., in the Open Science appendix), not entered separately into the submission system.
+
+For large artifacts that cannot feasibly be hosted anonymously (e.g., datasets > 1 GB), authors may provide a representative subset (such as a “toy” or validation dataset) sufficient to verify the methodology and core claims. In these cases, the Open Science appendix must explain why the full artifact cannot be shared anonymously and describe how the subset preserves the integrity and representativeness of the evaluation.
+
+After acceptance, authors are encouraged to de-anonymize or replace the anonymous links with stable, citable repositories, consistent with the Open Science policy above, and to register their artifacts for optional Artifact Evaluation.
+
 
 ## Optional Artifact Evaluation
 
-A published scientific paper consists of a constellation of artifacts that extend beyond the document itself: software, hardware, evaluation data and documentation, raw survey results, mechanized proofs, models, test suites, benchmarks, and so on. To emphasize the importance of such artifacts, the benefits to the authors and the community as a whole, and promote the reproducibility of experimental results, ACM CCS will, for the third time, introduce an optional artifact evaluation (AE) process, inspired by similar efforts at several other conferences. All authors of accepted papers (including shepherd approved and minor revisions) are encouraged to submit artifacts for AE. Each artifact submitted will be reviewed by the Artifact Evaluation Committee (AEC); a special call for artifacts will follow.
+Beyond basic availability, ACM CCS offers an **optional Artifact Evaluation (AE)** process to recognize artifacts that are functional and support the reproducibility of the paper’s results.
 
+Authors of accepted papers (including shepherd-approved and minor-revision papers) will have the option to submit their artifacts to the AE Committee for in-depth evaluation. The AEC will assess, as applicable:
+
+- Whether the artifact is functional (e.g., code runs, scripts execute, datasets load).  
+- Whether the artifact supports reproducing, within reasonable effort, the key results or claims in the paper.
+
+A separate call for artifacts will be issued after paper acceptance, detailing submission instructions, evaluation criteria, and timelines. Artifacts that successfully pass AE may receive a corresponding recognition (e.g., badges) in the conference proceedings and on the paper’s web page.
+
+
+## Policy on the Use of Generative AI and LLMs
+
+ACM CCS follows the ACM Policy on Authorship regarding the use of generative AI tools. Authors and reviewers must adhere to the following guidelines when using Large Language Models (LLMs) and other generative AI tools (e.g., ChatGPT, Claude, Copilot).
+
+### 1. Guidelines for Authors
+
+The use of generative AI tools to assist in preparing submissions is permitted, provided that human authors retain full responsibility for the accuracy, originality, and integrity of the work. Generative AI tools cannot be listed as authors. By submitting to ACM CCS, authors affirm that they have critically reviewed all AI-assisted content as if they had written it themselves, including all text, figures, code, experimental data, and citations.
+
+#### Hallucinations, Fabrication, and Falsification
+
+Authors must carefully verify that all AI-generated content is accurate and supported by evidence. Submissions that contain hallucinated citations (e.g., references to non-existent or fabricated works), falsified or fabricated data, experiments, or results, or other invented claims presented as fact may be **desk rejected**. Such practices are treated as research misconduct (fabrication and falsification). In serious cases, suspected misconduct may be reported to the authors’ institutions and/or referred to relevant ACM bodies (such as the ACM Publications Board or ethics committees) for investigation, which may result in further sanctions, including bans on future submissions, retractions, or other disciplinary actions in accordance with ACM policy.
+
+#### Mandatory Disclosure of Generative AI Usage
+
+In accordance with ACM policy, all uses of generative AI tools must be disclosed.
+
+If AI tools were used only for minor editorial improvements (e.g., grammar, spelling, or light style polishing) a brief statement in the __Acknowledgement Section__ is sufficient, such as:  “This paper was edited for grammar using [Tool Name].”
+
+If AI tools were used to generate or substantially rewrite substantive content (e.g., sentences or paragraphs in the main text, code, data, or detailed descriptions of experiments), authors must include a dedicated **“Generative AI Usage”** paragraph at the end of the paper, before the references. This paragraph should name the tools used, describe which parts of the paper were generated or heavily assisted (for instance, drafting portions of the introduction or producing an initial code skeleton), and explain how the authors validated the AI-generated content (for example, by manual verification, re-running experiments, or cross-checking citations). This paragraph does **not** count toward the page limit.
+
+### 2. Guidelines for Reviewers
+
+To protect the integrity and confidentiality of the peer-review process, reviewers must not upload any part of a submitted manuscript to public generative AI tools or LLM services. Under the ACM Peer Review Policy, submissions are confidential; providing the manuscript (or any portion of it, including abstract, figures, equations, tables, or code) to a third-party AI service is prohibited, as such systems may store, index, or train on the input without the authors’ consent.
+
+Reviewers who choose to use AI tools to assist in drafting their reviews (for example, for grammar checking of their own text) may do so only if they refrain from including any content from the submission itself.
+
+Violations of this policy are treated as serious breaches of confidentiality. Reviewers found to have uploaded submission content to public generative AI tools will be immediately removed from the Program Committee and reported to the ACM Publications Board or other relevant ACM bodies for investigation as an ethical misconduct matter. Potential consequences include bans on future reviewing or committee service, restrictions on future submissions, and other sanctions consistent with ACM policies and procedures.
+
+By serving on the Program Committee or submitting a paper to ACM CCS, all participants agree to comply with this policy on the use of generative AI and LLMs.
+
+## Withdrawing Policy
+
+Withdrawal of a paper is prohibited at any point prior to the official notification of the final decision (acceptance or rejection) being sent to the authors. By submitting a paper, authors commit to seeing the submission through the full review process. 
+ 
 ## Conference Tracks
 
 Like last year, the ACM CCS Conference features a multi-track format. Each track operates as a separate mini-conference, with its own Track Chairs and Track Program Committee. The overall process is managed by the Program Chairs (Véronique Cortier and Zhiqiang Lin). At the time of submission, authors must select one track, which should be the most relevant to the topic of the paper. We understand that some papers might span multiple topics. In specific cases, PC members might be asked to provide reviews for papers outside their track, in an effort to provide the best possible reviews to the authors. The chairs may decide to move a paper to another track.
-
-This is the list of tracks and their Track Chairs:
 
 ## Program Co-Chairs ✉ccs26-pc-chairs@acm.org
 
@@ -106,7 +166,7 @@ _Examples:_
 + [Analyzing PDFs like Binaries: Adversarially Robust PDF Malware Analysis via Intermediate Representation and Language Model](https://arxiv.org/pdf/2506.17162) is primarily focused on the definition of a more robust malware detection system (Software Security Track)
 + [Securely Training Decision Trees Efficiently](https://dl.acm.org/doi/pdf/10.1145/3658644.3670268), which is primarily focused on privacy-preserving ML with a heavy cryptographic component (Applied Cryptography)
 
-__Security and Privacy of Machine Learning:__ If your work directly addresses the security or privacy of ML itself, then the Security and Privacy of Machine Learning is the right track for you. This must also be stated in the Track Justification Statement, clarifying the authors' decision not to submit to a domain-specific track (e.g., Web Security, Software Security).
+__Security and Privacy of Machine Learning:__ If your work directly addresses the security or privacy of ML itself, the Security and Privacy of Machine Learning track is the right fit. This must also be stated in the Track Justification Statement, clarifying the authors' decision not to submit to a domain-specific track (e.g., Web Security, Software Security).
 
 Relevant work investigates novel attacks (e.g., data poisoning, backdoors, adversarial examples, prompt injection, model inversion, membership inference) or defenses (e.g., attack detection, secure training methods, post-attack forensics) throughout the ML lifecycle under plausible threat models that could occur in practice, not based on unrealistic assumptions or unlikely scenarios.
 
@@ -139,61 +199,65 @@ All SIGSAC sponsored conferences and workshops are required to follow ACM polici
 
 ### First Review Cycle
 
-Abstract submission deadline
+- **Abstract submission deadline**  
+  Jan 7, 2026 *(Mandatory: all papers must have an abstract submitted by this date)*
 
-Jan 7, 2026 (Mandatory, all papers must have an abstract submitted by this date)
+- **Full paper submission deadline**  
+  Jan 14, 2026
 
-Full Paper submission deadline
+- **Notification of early-rejection papers**  
+  Feb 18, 2026
 
-Jan 14, 2026
+- **Author rebuttal period**  
+  Mar 16–19, 2026
 
-Notification of early-rejection papers
+- **Rebuttal deadline**  
+  Mar 19, 2026
 
-Feb 18, 2026
+- **Author notification**  
+  Apr 9, 2026
 
-Author rebuttal period
+- **Minor revision approval deadline**  
+  June 5, 2026
 
-Mar 16—19, 2026
+- **Camera ready deadline**  
+  August 21, 2026
 
-Rebuttal deadline
-
-Mar 19, 2026
-
-Author notification
-
-Apr 9, 2026
-
+ 
 ### Second Review Cycle
 
-Abstract submission deadline
+- **Abstract submission deadline**  
+  Apr 22, 2026 *(Mandatory: all papers must have an abstract submitted by this date)*
 
-April 22, 2026 (Mandatory, all papers must have an abstract submitted by this date)
+- **Full paper submission deadline**  
+  Apr 29, 2026
 
-Full Paper submission deadline
+- **Notification of early-rejection papers**  
+  June 1, 2026
 
-April 29, 2026
+- **Author rebuttal period**  
+  June 23–26, 2026
 
-Notification of early-rejection papers
+- **Rebuttal deadline**  
+  June 26, 2026
 
-June 1, 2026
+- **Author notification**  
+  July 17, 2026
 
-Author rebuttal period
+- **Minor revision approval deadline**  
+  Sept 6, 2026
 
-June 23—26, 2026
-
-Rebuttal deadline
-
-June 26, 2026
-
-Author notification
-
-July 17, 2026
+- **Camera ready deadline**  
+  Sept 17, 2026
+ 
 
 ## Submission Site
 
-https://ccs2026a.hotcrp.com/ (for the first cycle), and https://ccs2026b.hotcrp.com/ (for the second cycle).
+- First review cycle: <https://ccs2026a.hotcrp.com/>  
+- Second review cycle: <https://ccs2026b.hotcrp.com/>
 
-Please Note: The official publication date is the first day of the conference. The official publication date affects the deadline for any patent filings related to published work.
+**Please Note:** The official publication date is the first day of the conference. The official publication date affects the deadline for any patent filings related to published work.
+
 
 ## Community Standards & Anti-Harassment
 
