@@ -5,9 +5,9 @@ The 33rd ACM Conference on Computer and Communications Security (CCS) seeks subm
 CCS has two review cycles in 2026. For each submission, one of the following decisions will be made:
 
 + __Accept__: Papers in this category will be accepted for publication in the proceedings and presentation at the conference, possibly after making minor changes with the oversight of a shepherd.
-+ __Minor revision__: Papers in this category are considered to be promising but need some minor additional work (e.g., minor experiments, proofs to minor lemmas). Authors will be given the opportunity to resubmit such papers, with appropriate revisions, in which case they should clearly explain in a separate note how the revisions address the comments of the reviewers. The revised paper will then be re-evaluated, and either accepted or rejected.
++ __Minor revision__: Papers in this category are considered to be promising but need some minor additional work (e.g., minor experiments, proofs to minor lemmas). Authors will be given the opportunity to revise such papers for inclusion in the same cycle, in which case they should clearly explain in a separate note how the revisions address the comments of the reviewers. The revised paper will then be re-evaluated, and either accepted or rejected.
 + __Reject__: Papers in this category are declined for inclusion in the conference. Papers rejected from the first review cycle may not be submitted again (even in revised form) to the second review cycle.
-Authors of each accepted paper must ensure that at least one author registers for the conference, and that their paper is presented in-person at the conference if at all possible.
+Authors of each accepted paper must ensure that at least one author registers for the conference, and that their paper is presented in-person at the conference.
 
 ## Paper Submission Information
 
@@ -17,11 +17,11 @@ All submitted papers will be evaluated based on their merits, particularly their
 
 Submissions must be a PDF file in double-column [ACM format](https://www.acm.org/publications/proceedings-template) using "sigconf" 2-column format, no more than 12 pages long, excluding the bibliography, well-marked appendices, and supplementary material. Note that reviewers are not required to read the appendices or any supplementary material. Authors should not change the font or the margins of the ACM format. The CCS information, such as concepts, keywords, or rights management information (e.g., DOI and ISBN), must be retained. The teaser figure is optional. Please refer to the sample-sigconf.tex and sample-sigconf.pdf in the ACM package (also mirrored [here](https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty)) as an example. Submissions not following the required format may be rejected without review.
 
-Submitted papers may be rejected for being out of scope, at the discretion of the PC chairs. Authors who have questions about whether their paper is in scope are encouraged to ask the PC chairs in advance. No modifications to the author list on a paper may be made after submission.
+Submitted papers may be rejected for being out of scope, at the discretion of the Program Chairs. Authors who have questions about whether their paper is in scope are encouraged to ask the Program Chairs in advance. No modifications to the author list on a paper may be made after submission.
 
 ## Ethical Considerations
 
-Authors are expected to consider the ethical implications and potential societal impact of their work. Papers that raise ethical concerns, such as those involving human subjects, user data, or real-world vulnerability analysis, must include a dedicated "__Ethical Considerations__" section. This section should discuss the balance of risks vs. benefits and the steps taken to minimize potential harm (e.g., responsible disclosure, data anonymization). Note that institutional (IRB/ERB) approval is neither strictly necessary nor always sufficient to demonstrate ethical conduct; we expect authors to reason about the ethics of their work beyond ensuring institutional compliance. For detailed guidance on community standards, we follow the [USENIX Security'26 Ethics Policy](https://www.usenix.org/conference/usenixsecurity26/call-for-papers#ethics). This discussion section will not count toward the page limit.
+Authors are expected to consider the ethical implications and potential societal impact of their work. Papers that raise ethical concerns, such as those involving human subjects, user data, or real-world vulnerability analysis, must include a dedicated "__Ethical Considerations__" section. This section should discuss the balance of risks vs. benefits and the steps taken to minimize potential harm (e.g., responsible disclosure, data anonymization). Note that institutional (IRB/ERB) approval is neither strictly necessary nor always sufficient to demonstrate ethical conduct; we expect authors to reason about the ethics of their work beyond ensuring institutional compliance. For detailed guidance on community standards, we follow the [USENIX Security'26 Ethics Policy](https://www.usenix.org/conference/usenixsecurity26/call-for-papers#ethics). This section does not count toward the page limit and should be placed after the 12-page main content.
 
 ## Open Science Policy
 
@@ -32,7 +32,7 @@ Each submitted paper **must include an “Open Science” appendix** that:
 - Clearly describes how the program committee can access each artifact during double-blind review (including anonymous URLs or credentials, where applicable). 
 - Explicitly justifies any artifact that **cannot** be shared (e.g., due to licensing restrictions, responsible disclosure concerns, safety or privacy of study subjects, or deployment risks if adversarial methods are released prematurely). When full sharing is not possible, authors are encouraged to provide partial, synthetic, or redacted artifacts that still allow reviewers to assess the methodology.
 
-Artifacts listed in the Open Science appendix are considered part of the submission and will be used in the review process. If a claimed contribution depends on an artifact that is not available and not convincingly justified, reviewers may judge that the contribution cannot be adequately evaluated, which can negatively affect the final decision.
+Artifacts listed in the Open Science appendix are considered part of the submission and will be used in the review process. If a claimed contribution depends on an artifact that is not available and not convincingly justified, reviewers may judge that the contribution cannot be adequately evaluated, which can negatively affect the final decision. The Open Science appendix is treated as an appendix and does not count toward the 12-page limit.
 
 ## Providing Artifacts at Submission Time
 
@@ -42,14 +42,14 @@ Artifacts are **required** for submissions whose contributions fundamentally rel
 2. Present experimental results derived from an implementation.  
 3. Propose a new benchmark, dataset, or data collection methodology.
 
-If reviewers determine that a central contribution cannot be properly evaluated without accessing artifacts that are neither provided nor convincingly justified in the Open Science appendix, the paper may be rejected.
+If reviewers determine that a central contribution cannot be properly evaluated without accessing artifacts that are neither provided nor convincingly justified in the Open Science appendix (as required by the __Open Science Policy__), the paper may be rejected
 
 All artifacts will be treated with the same strict confidentiality as the manuscript. Access is restricted to the assigned PC members, who may use artifacts **only** for the purpose of evaluating the paper. Any unauthorized use, sharing, or downloading for personal or professional purposes constitutes a serious ethical violation and may result in removal from the PC and additional sanctions (such as bans on future service or submissions).
 
 To preserve anonymity in the double-blind review process:
 
-- Authors **must** host artifacts on anonymous hosting services (e.g., <https://anonymous.4open.science>) that do not record identifying access logs (such as reviewer IP addresses).  
-- General-purpose platforms like Zenodo, Figshare, or non-anonymized GitHub repositories do **not** provide sufficient anonymization and must not be used for submission-time hosting.  
+- Authors **should use** host artifacts on anonymous hosting services (e.g., <https://anonymous.4open.science>) that do not record identifying access logs (such as reviewer IP addresses).  
+- Authors are discouraged to use general-purpose platforms like Zenodo, Figshare, or non-anonymized GitHub repositories as their default usage does not provide sufficient anonymization for double-blind review; whenever used, it is the sole responsibility of the authors to ensure that their artifacts do not break anonymity.
 - Anonymous URLs should be included directly in the submitted paper (e.g., in the Open Science appendix), not entered separately into the submission system.
 
 For large artifacts that cannot feasibly be hosted anonymously (e.g., datasets > 1 GB), authors may provide a representative subset (such as a “toy” or validation dataset) sufficient to verify the methodology and core claims. In these cases, the Open Science appendix must explain why the full artifact cannot be shared anonymously and describe how the subset preserves the integrity and representativeness of the evaluation.
@@ -83,9 +83,9 @@ Authors must carefully verify that all AI-generated content is accurate and supp
 
 #### Mandatory Disclosure of Generative AI Usage
 
-In accordance with ACM policy, all uses of generative AI tools must be disclosed.
+In accordance with ACM’s authorship policy, all uses of generative AI tools must be disclosed.
 
-If AI tools were used only for minor editorial improvements (e.g., grammar, spelling, or light style polishing) a brief statement in the __Acknowledgement Section__ is sufficient, such as:  “This paper was edited for grammar using [Tool Name].”
+If AI tools were used only for minor editorial improvements (e.g., grammar, spelling, or light style polishing) a brief statement in the __Acknowledgements Section__ is sufficient, such as:  “This paper was edited for grammar using [Tool Name].”
 
 If AI tools were used to generate or substantially rewrite substantive content (e.g., sentences or paragraphs in the main text, code, data, or detailed descriptions of experiments), authors must include a dedicated **“Generative AI Usage”** paragraph at the end of the paper, before the references. This paragraph should name the tools used, describe which parts of the paper were generated or heavily assisted (for instance, drafting portions of the introduction or producing an initial code skeleton), and explain how the authors validated the AI-generated content (for example, by manual verification, re-running experiments, or cross-checking citations). This paragraph does **not** count toward the page limit.
 
@@ -99,10 +99,6 @@ Violations of this policy are treated as serious breaches of confidentiality. Re
 
 By serving on the Program Committee or submitting a paper to ACM CCS, all participants agree to comply with this policy on the use of generative AI and LLMs.
 
-## Withdrawing Policy
-
-Withdrawal of a paper is prohibited at any point prior to the official notification of the final decision (acceptance or rejection) being sent to the authors. By submitting a paper, authors commit to seeing the submission through the full review process. 
- 
 ## Conference Tracks
 
 Like last year, the ACM CCS Conference features a multi-track format. Each track operates as a separate mini-conference, with its own Track Chairs and Track Program Committee. The overall process is managed by the Program Chairs (Véronique Cortier and Zhiqiang Lin). At the time of submission, authors must select one track, which should be the most relevant to the topic of the paper. We understand that some papers might span multiple topics. In specific cases, PC members might be asked to provide reviews for papers outside their track, in an effort to provide the best possible reviews to the authors. The chairs may decide to move a paper to another track.
@@ -156,7 +152,7 @@ Machine learning has become pervasive across security and privacy research. To e
 
 ### Categorization of ML-Related Papers
 
-__ML for Security and Privacy Problems:__ If ML is used to solve a security or privacy issue, submit the paper in the track that better aligns with the __primary field of the problem being addressed__, _not_ "Security and Privacy of Machine Learning".
+__ML for Security and Privacy Problems:__ If ML is used to solve a security or privacy issue, submit the paper in the track that better aligns with the __primary field of the problem being addressed__, _not_ "Security and Privacy of ML".
 
 _Examples:_
 
@@ -178,23 +174,27 @@ Purely theoretical ML works without actionable security insights are out of scop
 
 _Examples of suitable papers:_
 
-+ "[Beowulf: Mitigating Model Extraction Attacks Via Reshaping Decision Regions](https://dl.acm.org/doi/10.1145/3658644.3670267)" - addresses model extraction attacks with practical defense, fits the "Machine Learning and Security" Track
-+ "[Membership Inference Attacks Against In-Context Learning](https://dl.acm.org/doi/10.1145/3658644.3690306)" - focuses on the privacy of LLMs, fits the "Machine Learning and Security" Track
-+ "[Membership Inference Attacks as Privacy Tools: Reliability, Disparity and Ensemble](https://arxiv.org/pdf/2506.13972)" focuses primarily on analyzing evaluations of membership inference attacks, and fits the "Machine Learning and Security" track.
-+ "[Watch Out! Simple Horizontal Class Backdoor Can Trivially Evade Defense](https://dl.acm.org/doi/10.1145/3658644.3670361)" focuses on the security of MLs, proposing a new type of backdoor with a realistic threat model, which fits the "Machine Learning and Security" track
++ "[Beowulf: Mitigating Model Extraction Attacks Via Reshaping Decision Regions](https://dl.acm.org/doi/10.1145/3658644.3670267)" - addresses model extraction attacks with practical defense, fits the "Security and Privacy of Machine Learning" Track
++ "[Membership Inference Attacks Against In-Context Learning](https://dl.acm.org/doi/10.1145/3658644.3690306)" - focuses on the privacy of LLMs, fits the "Security and Privacy of Machine Learning" Track
++ "[Membership Inference Attacks as Privacy Tools: Reliability, Disparity and Ensemble](https://arxiv.org/pdf/2506.13972)" focuses primarily on analyzing evaluations of membership inference attacks, and fits the "Security and Privacy of Machine Learning" track.
++ "[Watch Out! Simple Horizontal Class Backdoor Can Trivially Evade Defense](https://dl.acm.org/doi/10.1145/3658644.3670361)" focuses on the security of ML models, proposing a new type of backdoor with a realistic threat model, which fits the "Security and Privacy of Machine Learning" track
 
 ## Conflicts of Interest
 
-The conference requires cooperation from both authors and program committee members to ensure a fair review process. For this purpose, authors must report all program-committee members who, in their opinion, have a conflict of interest and therefore may not be able to provide an unbiased review. Mandatory declared conflicts of interest include current or former doctoral advisor/advisee, members of the same institution, close family members, and recent co-authors (within the past 2 years). For any other declared conflict, authors are required to explain the nature of the conflict Program Chairs and the Track Chairs. The chairs reserve the right to request further explanation and can remove non-mandatory conflicts at their discretion.
+The conference requires cooperation from both authors and program committee members to ensure a fair review process. For this purpose, authors must report all program-committee members who, in their opinion, have a conflict of interest and therefore may not be able to provide an unbiased review. Mandatory declared conflicts of interest include current or former doctoral advisor/advisee, members of the same institution, close family members, and recent co-authors (within the past 2 years). For any other declared conflict, authors are required to explain the nature of the conflict to Program Chairs and the Track Chairs. The chairs reserve the right to request further explanation and can remove non-mandatory conflicts at their discretion.
 
-Track Chairs are not allowed to submit papers in their own track but they may submit any number of papers in other tracks, subject to a maximum of 7 papers per cycle.
+Track Chairs are not allowed to submit papers to their own track, but may submit papers to other tracks, subject to the overall limit of 7 papers per cycle.
 
-Program-committee members who have a genuine conflict of interest with a paper, including the Program Chairs and the Track Chairs, will be excluded from evaluation and discussion of that paper. When a Track Program Chair has a conflict, the paper will be handled by the Program Chairs. When a Program Chair is conflicted, the other Co-Chair will be responsible for managing that paper. When both Program Chairs are in conflict, a committee member will be appointed to handle the paper. Program Chairs are not allowed to be authors or co-authors of any submissions.
+Program-committee members who have a genuine conflict of interest with a paper, including the Program Chairs and the Track Chairs, will be excluded from evaluation and discussion of that paper. When all Track Chairs of a track have a conflict, the paper will be handled by the Program Chairs. When a Program Chair is conflicted, the other Co-Chair will be responsible for managing that paper. When both Program Chairs are in conflict, a committee member will be appointed to handle the paper. Program Chairs are not allowed to be authors or co-authors of any submissions.
 
 ## Policy for Peer-Review Integrity
 
-All SIGSAC sponsored conferences and workshops are required to follow ACM policies against harassment activities (https://www.acm.org/about-acm/policy-against-harassment) and ACM Code of Ethics and Professional Conduct (https://www.acm.org/code-of-ethics). Also all authors, PC members and non-PC reviewers are required to follow ACM Publications Policies (https://www.acm.org/publications/policies/toc). Particularly, we require all reviewers to uphold the integrity of the peer review process and avoid conflict of interest of any form (e.g., reviewer collusion ring). Those who violate these policies will be penalized according to ACM policies (https://www.acm.org/publications/policies/penalties-for-publication-violations). If you would like to report a violation, please contact program chairs of your conferences/workshops or SIGSAC officers. We are committed to protecting the confidentiality of your communication.
+All SIGSAC sponsored conferences and workshops are required to follow ACM policies against harassment activities (https://www.acm.org/about-acm/policy-against-harassment) and ACM Code of Ethics and Professional Conduct (https://www.acm.org/code-of-ethics). Also all authors, PC members, and non-PC reviewers are required to follow ACM Publications Policies (https://www.acm.org/publications/policies/toc). Particularly, we require all reviewers to uphold the integrity of the peer review process and avoid any form of conflict of interest (e.g., reviewer collusion rings). Those who violate these policies will be penalized according to ACM policies (https://www.acm.org/publications/policies/penalties-for-publication-violations). If you would like to report a violation, please contact the Program Chairs of the conference or the SIGSAC officers. We are committed to protecting the confidentiality of your communication.
 
+## Withdrawal Policy
+
+Withdrawal of a paper is prohibited at any point prior to the official notification of the final decision (acceptance or rejection) being sent to the authors. By submitting a paper, authors commit to seeing the submission for that cycle through the full review process.
+ 
 ## Important Dates
 
 ### First Review Cycle
@@ -206,13 +206,13 @@ All SIGSAC sponsored conferences and workshops are required to follow ACM polici
   Jan 14, 2026
 
 - **Notification of early-rejection papers**  
-  Feb 18, 2026
+  Feb 20, 2026
 
 - **Author rebuttal period**  
-  Mar 16–19, 2026
+  Mar 17–20, 2026
 
 - **Rebuttal deadline**  
-  Mar 19, 2026
+  Mar 20, 2026
 
 - **Author notification**  
   Apr 9, 2026
@@ -233,13 +233,13 @@ All SIGSAC sponsored conferences and workshops are required to follow ACM polici
   Apr 29, 2026
 
 - **Notification of early-rejection papers**  
-  June 1, 2026
+  June 3, 2026
 
 - **Author rebuttal period**  
-  June 23–26, 2026
+  June 29–July 1, 2026
 
 - **Rebuttal deadline**  
-  June 26, 2026
+  July 1, 2026
 
 - **Author notification**  
   July 17, 2026
@@ -263,7 +263,7 @@ All SIGSAC sponsored conferences and workshops are required to follow ACM polici
 
 ACM CCS is committed to promoting diversity and inclusion in our community. If you have suggestions, concerns, or complaints related to biases or sexual harassment, we encourage you to reach out to the Program Chairs. We are committed to protecting the anonymity of such reports and helping to address your concerns. We value your feedback and ideas to help us all build a healthier and more welcoming community.
 
-We encourage the authors to be mindful of not using language or examples that further the marginalization, stereotyping, or erasure of any group of people, especially historically under-represented groups (URGs) in computing. Of course, exclusionary treatment can arise unintentionally. Be vigilant and actively guard against such issues in your writing. Reviewers will also be empowered to monitor and demand changes if such issues arise in your submissions. Please check the link for more information.
+We encourage the authors to be mindful of not using language or examples that further the marginalization, stereotyping, or erasure of any group of people, especially historically under-represented groups (URGs) in computing. Of course, exclusionary treatment can arise unintentionally. Be vigilant and actively guard against such issues in your writing. Reviewers will also be empowered to monitor and demand changes if such issues arise in your submissions. 
 
 ## Agreements
 
@@ -275,9 +275,9 @@ Please ensure that you and your co-authors [obtain an ORCID ID](https://orcid.or
 
 Starting January 1, 2026, ACM will fully transition to Open Access. All ACM publications, including those from ACM-sponsored conferences, will be 100% Open Access. Authors will have two primary options for publishing Open Access articles with ACM: the ACM Open institutional model or by paying Article Processing Charges (APCs). With over 1,800 institutions already part of ACM Open, the majority of ACM-sponsored conference papers will not require APCs from authors or conferences (currently, around 70-75%).
 
-Authors from institutions not participating in ACM Open will need to pay an APC to publish their papers, unless they qualify for a financial or discretionary waiver. To find out whether an APC applies to your article, please consult the list of [participating institutions](https://libraries.acm.org/acmopen/open-participants) in ACM Open and review the [APC Waivers and Discounts Policy](https://www.acm.org/publications/policies/policy-on-open-access-apc-waivers-and-discounts). Keep in mind that waivers are rare and are granted based on specific criteria set by ACM.
+Authors from institutions not participating in ACM Open will need to pay an APC to publish their papers, unless they qualify for a financial or discretionary waiver. To find out whether an APC applies to your article, please consult the list of [participating institutions](https://libraries.acm.org/acmopen/open-participants) in ACM Open and review the [APC Waivers and Discounts Policy](https://www.acm.org/publications/policies/policy-on-open-access-apc-waivers-and-discounts). Please note that waivers are limited and granted based on specific criteria set by ACM.
 
-Understanding that this change could present financial challenges, ACM has approved a temporary subsidy for 2026 to ease the transition and allow more time for institutions to join ACM Open. The subsidy will offer:
+Understanding that this change could present financial challenges, ACM has approved a temporary subsidy for 2026 to ease the transition and allow more time for institutions to join ACM Open. Thanks to the subsidy, the APC will be as follows:
 + $250 APC for ACM/SIG members
 + $350 for non-members
 
