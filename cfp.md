@@ -50,7 +50,7 @@ To preserve anonymity in the double-blind review process:
 
 - Authors **should use** host artifacts on anonymous hosting services (e.g., <https://anonymous.4open.science>) that do not record identifying access logs (such as reviewer IP addresses).  
 - Authors are discouraged to use general-purpose platforms like Zenodo, Figshare, or non-anonymized GitHub repositories as their default usage does not provide sufficient anonymization for double-blind review; whenever used, it is the sole responsibility of the authors to ensure that their artifacts do not break anonymity.
-- Anonymous URLs should be included directly in the submitted paper (e.g., in the Open Science appendix), not entered separately into the submission system.
+- __Anonymous URLs should be included directly in the submitted paper__ (e.g., in the Open Science appendix), not entered separately into the submission system.
 
 For large artifacts that cannot feasibly be hosted anonymously (e.g., datasets > 1 GB), authors may provide a representative subset (such as a “toy” or validation dataset) sufficient to verify the methodology and core claims. In these cases, the Open Science appendix must explain why the full artifact cannot be shared anonymously and describe how the subset preserves the integrity and representativeness of the evaluation.
 
@@ -87,7 +87,7 @@ In accordance with ACM’s authorship policy, all uses of generative AI tools mu
 
 If AI tools were used only for minor editorial improvements (e.g., grammar, spelling, or light style polishing) a brief statement in the __Acknowledgements Section__ is sufficient, such as:  “This paper was edited for grammar using [Tool Name].”
 
-If AI tools were used to generate or substantially rewrite substantive content (e.g., sentences or paragraphs in the main text, code, data, or detailed descriptions of experiments), authors must include a dedicated **“Generative AI Usage”** paragraph at the end of the paper, before the references. This paragraph should name the tools used, describe which parts of the paper were generated or heavily assisted (for instance, drafting portions of the introduction or producing an initial code skeleton), and explain how the authors validated the AI-generated content (for example, by manual verification, re-running experiments, or cross-checking citations). This paragraph does **not** count toward the page limit.
+If AI tools were used to generate or substantially rewrite substantive content (e.g., sentences or paragraphs in the main text, code, data, or detailed descriptions of experiments), authors __must include__ a dedicated **“Generative AI Usage”** paragraph at the end of the paper, before the references. This paragraph should name the tools used, describe which parts of the paper were generated or heavily assisted (for instance, drafting portions of the introduction or producing an initial code skeleton), and explain how the authors validated the AI-generated content (for example, by manual verification, re-running experiments, or cross-checking citations). This paragraph does **not** count toward the page limit.
 
 ### 2. Guidelines for Reviewers
 
@@ -193,7 +193,7 @@ All SIGSAC sponsored conferences and workshops are required to follow ACM polici
 
 ## Withdrawal Policy
 
-Withdrawal of a paper is prohibited at any point prior to the official notification of the final decision (acceptance or rejection) being sent to the authors. By submitting a paper, authors commit to seeing the submission for that cycle through the full review process.
+Withdrawal of a paper is prohibited at any point prior to the official notification of the final decision (acceptance or rejection) being sent to the authors. By submitting a full paper (beyond the abstract-only stage), authors commit to seeing the submission for that cycle through the full review process; submitting only an abstract does not constitute a submission for this purpose.
  
 ## Important Dates
 
