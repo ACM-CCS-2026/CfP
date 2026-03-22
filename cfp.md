@@ -9,13 +9,44 @@ CCS has two review cycles in 2026. For each submission, one of the following dec
 + __Reject__: Papers in this category are declined for inclusion in the conference. Papers rejected from the first review cycle may not be submitted again (even in revised form) to the second review cycle.
 Authors of each accepted paper must ensure that at least one author registers for the conference, and that their paper is presented in-person at the conference.
 
+Authors of each accepted paper must ensure that at least one author registers for the conference, and that their paper is presented in-person at the conference.
+
+## Submission Policies and Instructions
+### Executive Summary
+All papers must adhere to the following rules (outlined more verbosely below). Papers found in violation of any of these requirements will be desk-rejected without review.
+
+### By registration deadline
+* All papers MUST be registered in the respective HotCRP instance one week before the submission deadline, including the **definitive** title, the **definitive** abstract, the **definitive** track, and the **definitive** track justification.
+* Abstracts and titles MUST NOT be changed after the abstract registration deadline, on the HotCRP metadata.
+* Because abstracts and titles are used to match papers with reviewers, abstracts and titles MUST NOT be changed in the final submitted pdf. They MAY be adjusted in the camera-ready version upon acceptance.
+* A track MUST be selected and MUST NOT be changed after the registration deadline.
+* All papers MUST provide a track justification (non empty, not dubious) by the registration deadline. The track justification MUST NOT be changed after the registration deadline.
+  
+### By submission deadline
+* The list of authors MAY be changed after registration but CANNOT be changed after the submission deadline. In particular, NO author can be added once papers are accepted. The order of authors MAY be changed for the camera-ready version upon acceptance.
+* All papers MUST discuss Open Science. This MUST be in a separate appendix called "Open Science" (placed after the 12-page main content and the bibliography) that clearly lists where the artifacts necessary for evaluating the contributions of their submission are located. These artifacts MUST be made available at most 3 days after the time of submission, or their lack of availability should be explained by the submission deadline. In case there is no artifact, this should be stated in this section.
+* All papers with online artifacts MUST provide the URL of the anonymous artifact website by submission deadline in both the paper and HotCRP.
+* All papers with potential ethical concerns MUST have a discussion of research ethics. This MUST be in a separate appendix called "Ethical Considerations" (placed after the 12-page main content and the bibliography). In case of doubts on whether your paper has potential ethical concerns, add an appendix "Ethical Considerations".
+* All papers MUST NOT reveal the identity of the authors (e.g., names, self-references with "we", funding acknowledgements, deanonymizing Github repositories).
+* All papers MUST comply with the unaltered ACM LaTeX template. Any attempts to remove whitespace (e.g., negative vspaces, savetrees, titlesec, removing author blocks, etc.) or change the formatting defaults (e.g., fonts) are strictly forbidden. The Computing Classification System (CCS) information, such as concepts, keywords, or copyrights management information, DOI, ISBN, ACM reference format, must be retained, without any alteration, except keyword update.
+* All authors MUST provide their ORCIDs through the profile page on HotCRP by the submission deadline.
+* All authors MUST acknowledge the submission terms on HotCRP by the submission deadline.
+* Authors MUST NOT submit more than seven papers per cycle.
+  
+### By online artifacts uploading deadline
+For Cycle B, CCS will pilot a 3 days grace period for artifacts provided through anonymous hosting services. After the artifact uploading deadline (May 2nd AoE), artifacts MUST be available at the provided URL and authors MUST NOT change the artifacts after the artifact uploading deadline.
+
+### Other
+At least one author of each accepted paper MUST register for and commit to attending the conference.
+The chairs retain the right to desk-reject any submissions which attempt to disrupt the reviewing process (e.g., attempting prompt injections or crashing PDF viewers with malicious PDFs).
+
 ## Paper Submission Information
 
 All submissions must be received by 11:59 PM AoE (UTC-12) on the day of the corresponding deadline. Submitted papers must not substantially overlap with papers that have been published or accepted for publication, or that are simultaneously in submission to a journal, conference, or workshop with published proceedings. All submissions should be properly anonymized. Papers should avoid revealing authors' identity in the text. When referring to their previous work, authors are required to cite their papers in the third person, without identifying themselves. In the unusual case in which a third-person reference is infeasible, authors can blind the reference itself. Papers not properly anonymized may be rejected without review. __Authors may submit up to a maximum of 7 papers at each cycle.__
 
 All submitted papers will be evaluated based on their merits, particularly their importance to practical aspects of computer and communications security and privacy, novelty, quality of execution, and presentation. Note that CCS does not accept SoK or survey papers.
 
-Submissions must be a PDF file in double-column [ACM format](https://www.acm.org/publications/proceedings-template) using "sigconf" 2-column format, no more than 12 pages long, excluding the bibliography, well-marked appendices, and supplementary material. Note that reviewers are not required to read the appendices or any supplementary material. Authors should not change the font or the margins of the ACM format. The CCS information, such as concepts, keywords, or rights management information (e.g., DOI and ISBN), must be retained. The teaser figure is optional. Please refer to the sample-sigconf.tex and sample-sigconf.pdf in the ACM package (also mirrored [here](https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty)) as an example. Submissions not following the required format may be rejected without review.
+Submissions must be a PDF file in double-column [ACM format](https://www.acm.org/publications/proceedings-template) using "sigconf" 2-column format, no more than 12 pages long, excluding the bibliography, well-marked appendices, and supplementary material. Note that reviewers are not required to read the appendices or any supplementary material. Authors should not change the font or the margins of the ACM format. The CCS information, such as concepts, keywords, or rights management information (e.g., DOI and ISBN), must be retained. The teaser figure is optional. Please refer to the sample-sigconf.tex and sample-sigconf.pdf in the ACM package (also mirrored here) for the instructions. In order to clarify what is optional and what must be retained, we provide a minimal [sample-ccs2026.tex](https://members.loria.fr/VCortier/files/CCS2026/sample-ccs2026.tex) file and the corresponding [sample-ccs2026.pdf](https://members.loria.fr/VCortier/files/CCS2026/sample-ccs2026.pdf) file, obtained by compiling the ACM package. It contains the information that MUST be retained. Submissions not following the required format may be rejected without review.
 
 Submitted papers may be rejected for being out of scope, at the discretion of the Program Chairs. Authors who have questions about whether their paper is in scope are encouraged to ask the Program Chairs in advance. No modifications to the author list on a paper may be made after submission.
 
@@ -31,10 +62,11 @@ Each submitted paper **must include an “Open Science” appendix** that:
 - Enumerates all artifacts needed to evaluate the paper’s core contributions (e.g., code, datasets, models, configuration files, scripts, documentation, benchmarks).  
 - Clearly describes how the program committee can access each artifact during double-blind review (including anonymous URLs or credentials, where applicable). 
 - Explicitly justifies any artifact that **cannot** be shared (e.g., due to licensing restrictions, responsible disclosure concerns, safety or privacy of study subjects, or deployment risks if adversarial methods are released prematurely). When full sharing is not possible, authors are encouraged to provide partial, synthetic, or redacted artifacts that still allow reviewers to assess the methodology.
+- In case no artifact is needed to evaluate the paper’s core contributions, the authors should state it explicitly.
 
 Artifacts listed in the Open Science appendix are considered part of the submission and will be used in the review process. If a claimed contribution depends on an artifact that is not available and not convincingly justified, reviewers may judge that the contribution cannot be adequately evaluated, which can negatively affect the final decision. The Open Science appendix is treated as an appendix and does not count toward the 12-page limit.
 
-## Providing Artifacts at Submission Time
+## Providing Artifacts at Submission Time, with a 3 day grace period for online artifacts
 
 Artifacts are **required** for submissions whose contributions fundamentally rely on an implementation, experimental evaluation, system, tool, or dataset. This includes, but is not limited to, papers that:
 
@@ -42,21 +74,27 @@ Artifacts are **required** for submissions whose contributions fundamentally rel
 2. Present experimental results derived from an implementation.  
 3. Propose a new benchmark, dataset, or data collection methodology.
 
-If reviewers determine that a central contribution cannot be properly evaluated without accessing artifacts that are neither provided nor convincingly justified in the Open Science appendix (as required by the __Open Science Policy__), the paper may be rejected
+If reviewers determine that a central contribution cannot be properly evaluated without accessing artifacts that are neither provided nor convincingly justified in the Open Science appendix (as required by the __Open Science Policy__), the paper may be rejected.
 
 All artifacts will be treated with the same strict confidentiality as the manuscript. Access is restricted to the assigned PC members, who may use artifacts **only** for the purpose of evaluating the paper. Any unauthorized use, sharing, or downloading for personal or professional purposes constitutes a serious ethical violation and may result in removal from the PC and additional sanctions (such as bans on future service or submissions).
 
 To preserve anonymity in the double-blind review process:
 
-- Authors **should** host artifacts on anonymous hosting services (e.g., <https://anonymous.4open.science>) that do not expose identifying access logs (such as reviewer IP addresses) and do not allow authors to track or fingerprint individual visitors.
+- Authors **should** host artifacts on anonymous hosting services (e.g., <https://anonymous.4open.science>) that do not expose identifying access logs (such as reviewer IP addresses) and do not allow authors to track or fingerprint individual visitors. Make sure the files will be available for the whole duration of the evaluation process (without any update). In particular, check the default repository expiration time, which may need to be changed.
 
 - Authors **must not** use self-managed or easily modifiable hosting solutions (such as personal websites, Google Sites, wikis, cloud buckets, or similar services) that allow them to dynamically update content or embed tracking mechanisms (e.g., JavaScript analytics, Google Analytics) that could monitor reviewer activity or compromise anonymity.
 
 - Authors are **discouraged** from using general-purpose platforms like Zenodo, Figshare, or non-anonymized GitHub repositories as their default choice, since their typical use does not provide sufficient anonymization for double-blind review. If such platforms are used, it is the sole responsibility of the authors to ensure that no identifying information is exposed (e.g., usernames, organization names, commit history) and that artifact access does not break anonymity.
 
-- __Anonymous URLs should be included directly in the submitted paper__ (e.g., in the Open Science appendix), not entered separately into the submission system.
+- __Anonymous URLs should be included directly in the submitted paper__ (e.g., in the Open Science appendix), and optionally in the submission form for the paper.
 
 For large artifacts that cannot feasibly be hosted anonymously (e.g., datasets > 1 GB), authors may provide a representative subset (such as a “toy” or validation dataset) sufficient to verify the methodology and core claims. In these cases, the Open Science appendix must explain why the full artifact cannot be shared anonymously and describe how the subset preserves the integrity and representativeness of the evaluation.
+
+(**New for Cycle B**) As CCS values artifacts, a 3 days grace period will be granted for artifacts provided through an anonymous website (e.g., https://anonymous.4open.science).
+
+* After May 2nd AoE, papers with empty or dubious artifacts at the provided URL will be desk-rejected. Similarly, any update after the artifact deadline will lead to desk rejection. Official timestamps such as the ones provided by https://anonymous.4open.science are strongly encouraged.
+* The grace period applies to material submitted through the URL provided in the HotCRP form. Supplementary material provided through HotCRP CANNOT be updated within the grace period.
+* The artifacts MUST correspond to figures, experiments, results provided in the submitted paper. The paper CANNOT be updated after the submission deadline even if a discrepancy between the paper and the artifacts is discovered (in which case, the paper must be withdrawn).
 
 After acceptance, authors are encouraged to de-anonymize or replace the anonymous links with stable, citable repositories, consistent with the Open Science policy above, and to register their artifacts for optional Artifact Evaluation.
 
@@ -231,7 +269,7 @@ Withdrawal of a paper is prohibited at any point prior to the official notificat
 ### Second Review Cycle
 
 - **Abstract submission deadline**  
-  Apr 22, 2026 *(Mandatory: all papers must have an abstract submitted by this date)*
+  Apr 22, 2026 *(Mandatory: all papers must have a title, an abstract submitted and a track selected by this date)*
 
 - **Full paper submission deadline**  
   Apr 29, 2026
