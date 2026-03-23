@@ -86,7 +86,7 @@ To preserve anonymity in the double-blind review process:
 
 - Authors are **discouraged** from using general-purpose platforms like Zenodo, Figshare, or non-anonymized GitHub repositories as their default choice, since their typical use does not provide sufficient anonymization for double-blind review. If such platforms are used, it is the sole responsibility of the authors to ensure that no identifying information is exposed (e.g., usernames, organization names, commit history) and that artifact access does not break anonymity.
 
-- __Anonymous URLs should be included directly in the submitted paper__ (e.g., in the Open Science appendix), and optionally in the submission form for the paper.
+- __Anonymous URLs should be included directly in the submitted paper__ (e.g., in the Open Science appendix), and also provided in the submission form.
 
 For large artifacts that cannot feasibly be hosted anonymously (e.g., datasets > 1 GB), authors may provide a representative subset (such as a “toy” or validation dataset) sufficient to verify the methodology and core claims. In these cases, the Open Science appendix must explain why the full artifact cannot be shared anonymously and describe how the subset preserves the integrity and representativeness of the evaluation.
 
