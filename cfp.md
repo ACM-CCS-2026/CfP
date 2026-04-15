@@ -80,7 +80,7 @@ All artifacts will be treated with the same strict confidentiality as the manusc
 
 To preserve anonymity in the double-blind review process:
 
-- Authors **should** host artifacts on anonymous hosting services (e.g., <https://anonymous.4open.science>) that do not expose identifying access logs (such as reviewer IP addresses) and do not allow authors to track or fingerprint individual visitors. Make sure the files will be available for the whole duration of the evaluation process (without any update). In particular, check the default repository expiration time, which may need to be changed.
+- Authors **should** host artifacts on anonymous hosting services (e.g., <https://anonymous.4open.science>) that do not expose identifying access logs (such as reviewer IP addresses) and do not allow authors to track or fingerprint individual visitors. Make sure the files will be available for the whole duration of the evaluation process (without any update). In particular, check the default repository expiration time, which may need to be changed.  In case your artifact is too large to be hosted on a service such as https://anonymous.4open.science, please contact the PC chairs. We may be able to provide you with a cloud storage hosted by one of our track chairs, hence preserving your identity.
 
 - Authors **must not** use self-managed or easily modifiable hosting solutions (such as personal websites, Google Sites, wikis, cloud buckets, or similar services) that allow them to dynamically update content or embed tracking mechanisms (e.g., JavaScript analytics, Google Analytics) that could monitor reviewer activity or compromise anonymity.
 
